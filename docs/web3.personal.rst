@@ -49,12 +49,12 @@ The following methods are available on the ``web3.personal`` namespace.
     * Delegates to ``personal_newAccount`` RPC Method
 
     Generates a new account in the node's keychain encrypted with the
-    given ``passphrase``.  Returns the address of the created account.
+    given ``password``.  Returns the address of the created account.
 
     .. code-block:: python
 
         >>> web3.personal.newAccount('the-passphrase')
-        ['0xd3cda913deb6f67967b99d67acdfa1712c293601']
+        u'0xd3cda913deb6f67967b99d67acdfa1712c293601'
 
 
 .. py:method:: signAndSendTransaction(self, tx, passphrase)
